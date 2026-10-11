@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>InterviewAI — Practice Smarter. Perform Better.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main stylesheet -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body class="home-page">
+
+    <!-- =====================================================
+         BACKGROUND EFFECTS
+    ====================================================== -->
+
+    <div class="page-glow glow-purple"></div>
+    <div class="page-glow glow-pink"></div>
+    <div class="page-glow glow-orange"></div>
+
+    <div class="grid-overlay"></div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="main-navbar">
+
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <a href="{{ url_for('home') }}" class="brand-logo">
+
+                <span class="brand-symbol">
+                    ✦
+                </span>
+
+                <span>InterviewAI</span>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+            <nav class="main-navigation">
+
+                <a href="#home" class="nav-item active">
+                    Home
+                </a>
+
+                <a href="#features" class="nav-item">
+                    Features
+                </a>
+
+                <a href="#how-it-works" class="nav-item">
+                    How It Works
+                </a>
+
+                <a href="#testimonials" class="nav-item">
+                    Testimonials
+                </a>
+
+                <a href="#pricing" class="nav-item">
+                    Pricing
+                </a>
+
+            </nav>
+
+
+            <!-- NAV ACTIONS -->
+            <div class="navbar-actions">
+
+                <a
+                    href="{{ url_for('login') }}"
+                    class="nav-login"
+                >
+                    Log in
+                </a>
+
+                <a
+                    href="{{ url_for('register') }}"
+                    class="nav-get-started"
+                >
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main id="home">
+
+        <section class="hero-section">
+
+            <div class="hero-container">
+
+
+                <!-- =================================================
+                     LEFT HERO CONTENT
+                ================================================== -->
+
+                <div class="hero-content">
+
+                    <!-- Badge -->
+
+                    <div class="hero-badge">
+
+                        <span class="badge-star">✦</span>
+
+                        <span>
+                            AI POWERED INTERVIEW PRACTICE
+                        </span>
+
+                    </div>
+
+
+                    <!-- Main heading -->
+
+                    <h1 class="hero-title">
+
+                        Practice Smarter.
+
+                        <br>
+
+                        <span>
+                            Perform Better.
+                        </span>
+
+                    </h1>
+
+
+                    <!-- Description -->
+
+                    <p class="hero-description">
+
+                        Realistic AI interviews, instant feedback,
+                        detailed analytics, and personalized tips
+                        to help you ace your next interview.
+
+                    </p>
+
+
+                    <!-- CTA buttons -->
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="{{ url_for('interview') }}"
+                            class="hero-primary-button"
+                        >
+
+                            <span>
+                                Start Mock Interview
+                            </span>
+
+                            <span class="button-arrow">
+                                →
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="#features"
+                            class="hero-secondary-button"
+                        >
+
+                            <span class="play-circle">
+                                ▶
+                            </span>
+
+                            <span>
+                                Explore Features
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         MINI FEATURE ITEMS
+                    ================================================== -->
+
+                    <div class="hero-mini-features">
+
+
+                        <!-- ITEM 1 -->
+
+                        <div class="mini-feature">
+
+                            <div class="mini-feature-icon purple">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <rect
+                                        x="4"
+                                        y="4"
+                                        width="16"
+                                        height="16"
+                                        rx="4"
+                                    />
+                                    <path
+                                        d="M8 12h8M12 8v8"
+                                    />
+                                </svg>
+                            </div>
+
+                            <span>
+                                AI Generated<br>
+                                Questions
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- ITEM 2 -->
+
+                        <div class="mini-feature">
+
+                            <div class="mini-feature-icon blue">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <rect
+                                        x="5"
+                                        y="4"
+                                        width="14"
+                                        height="16"
+                                        rx="3"
+                                    />
+
+                                    <path
+                                        d="M8 8h8M8 12h8M8 16h5"
+                                    />
+                                </svg>
+                            </div>
+
+                            <span>
+                                Instant<br>
+                                Feedback
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- ITEM 3 -->
+
+                        <div class="mini-feature">
+
+                            <div class="mini-feature-icon pink">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <path
+                                        d="M5 19V9"
+                                    />
+
+                                    <path
+                                        d="M12 19V5"
+                                    />
+
+                                    <path
+                                        d="M19 19v-7"
+                                    />
+
+                                    <path
+                                        d="M3 19h18"
+                                    />
+                                </svg>
+
+                            </div>
+
+                            <span>
+                                Performance<br>
+                                Analytics
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- ITEM 4 -->
+
+                        <div class="mini-feature">
+
+                            <div class="mini-feature-icon orange">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <circle
+                                        cx="12"
+                                        cy="12"
+                                        r="8"
+                                    />
+
+                                    <path
+                                        d="M12 8v4l3 2"
+                                    />
+
+                                </svg>
+
+                            </div>
+
+                            <span>
+                                Personalized<br>
+                                Coaching
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         TRUST / REVIEW
+                    ================================================== -->
+
+                    <div class="hero-trust">
+
+                        <div class="avatar-stack">
+
+                            <div class="trust-avatar">👩🏻</div>
+                            <div class="trust-avatar">👨🏻</div>
+                            <div class="trust-avatar">👩🏽</div>
+                            <div class="trust-avatar">👨🏾</div>
+                            <div class="trust-avatar">👩🏼</div>
+
+                        </div>
+
+
+                        <div class="trust-text">
+
+                            <strong>
+                                10,000+ professionals
+                            </strong>
+
+                            <span>
+                                improving their interview skills
+                            </span>
+
+                            <div class="rating-row">
+
+                                <span class="stars">
+                                    ★★★★★
+                                </span>
+
+                                <span>
+                                    4.9/5 from 2,000+ reviews
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     AI INTERVIEWER CARD
+                ================================================== -->
+
+                <div class="hero-visual">
+
+                    <div class="ai-interviewer-card">
+
+
+                        <!-- Card top -->
+
+                        <div class="ai-card-header">
+
+                            <span class="ai-card-title">
+                                AI Interviewer
+                            </span>
+
+                            <span class="ai-online">
+                                <span></span>
+                                Online
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Robot -->
+
+                        <div class="robot-area">
+
+                            <div class="robot-glow"></div>
+
+                            <div class="robot">
+
+                                <div class="robot-head">
+
+                                    <div class="robot-screen">
+
+                                        <span class="robot-eye left-eye"></span>
+
+                                        <span class="robot-eye right-eye"></span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="robot-neck"></div>
+
+                                <div class="robot-body">
+
+                                    <div class="robot-body-light"></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Speech bubble -->
+
+                            <div class="speech-bubble">
+
+                                <span>
+                                    Tell me about
+                                </span>
+
+                                <span>
+                                    yourself.
+                                </span>
+
+                                <div class="speech-wave">
+                                    〰
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Listening -->
+
+                        <div class="listening-status">
+
+                            <span>
+                                Listening...
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Audio waveform -->
+
+                        <div class="audio-wave">
+
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+
+                        </div>
+
+
+
+                        <!-- Controls -->
+
+                        <div class="interviewer-controls">
+
+                            <button
+                                type="button"
+                                class="interviewer-control"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <circle
+                                        cx="12"
+                                        cy="12"
+                                        r="7"
+                                    />
+                                    <path
+                                        d="M9 15c2 1.5 4 1.5 6 0"
+                                    />
+                                </svg>
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="interviewer-control"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <path
+                                        d="M7 7h10v10H7z"
+                                    />
+                                </svg>
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="interviewer-control microphone"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <rect
+                                        x="9"
+                                        y="4"
+                                        width="6"
+                                        height="11"
+                                        rx="3"
+                                    />
+
+                                    <path
+                                        d="M6 11a6 6 0 0 0 12 0M12 17v3M9 20h6"
+                                    />
+
+                                </svg>
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="interviewer-control"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <path
+                                        d="M8 8l8 8M16 8l-8 8"
+                                    />
+                                </svg>
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="interviewer-control"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+                                    <path
+                                        d="M8 8l8 8M16 8l-8 8"
+                                    />
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         FLOATING STATISTICS CARD
+                    ================================================== -->
+
+                    <div class="hero-statistics">
+
+                        <!-- STAT 1 -->
+
+                        <div class="hero-stat">
+
+                            <strong class="purple-stat">
+                                92%
+                            </strong>
+
+                            <span>
+                                Average Score
+                            </span>
+
+                            <div class="mini-chart purple-chart">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                        </div>
+
+
+                        <!-- STAT 2 -->
+
+                        <div class="hero-stat">
+
+                            <strong class="blue-stat">
+                                150+
+                            </strong>
+
+                            <span>
+                                Interviews Taken
+                            </span>
+
+                            <div class="mini-chart blue-chart">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                        </div>
+
+
+                        <!-- STAT 3 -->
+
+                        <div class="hero-stat">
+
+                            <strong class="orange-stat">
+                                85%
+                            </strong>
+
+                            <span>
+                                Users Improved
+                            </span>
+
+                            <div class="mini-chart orange-chart">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                        </div>
+
+
+                        <!-- STAT 4 -->
+
+                        <div class="hero-stat">
+
+                            <strong class="pink-stat">
+                                24/7
+                            </strong>
+
+                            <span>
+                                AI Availability
+                            </span>
+
+                            <div class="mini-chart pink-chart">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FEATURES
+        ====================================================== -->
+
+        <section
+            id="features"
+            class="features-section"
+        >
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        ✦ POWERFUL FEATURES
+                    </span>
+
+                    <h2>
+                        Everything You Need
+                        <span>
+                            To Get Hired.
+                        </span>
+                    </h2>
+
+                    <p>
+                        A complete interview preparation platform
+                        designed around your growth.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon purple">
+                            ✦
+                        </div>
+
+                        <h3>
+                            AI Generated Questions
+                        </h3>
+
+                        <p>
+                            Practice role-specific technical and
+                            HR questions tailored to your interview
+                            level.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon pink">
+                            ◈
+                        </div>
+
+                        <h3>
+                            Instant Feedback
+                        </h3>
+
+                        <p>
+                            Get immediate AI-powered feedback on
+                            your answers with actionable suggestions.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon orange">
+                            ↗
+                        </div>
+
+                        <h3>
+                            Performance Analytics
+                        </h3>
+
+                        <p>
+                            Understand your strengths, weaknesses
+                            and improvement over time.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon violet">
+                            ◎
+                        </div>
+
+                        <h3>
+                            Personalized Coaching
+                        </h3>
+
+                        <p>
+                            Receive personalized recommendations
+                            based on your interview performance.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon blue">
+                            ◉
+                        </div>
+
+                        <h3>
+                            Multiple Interview Types
+                        </h3>
+
+                        <p>
+                            Choose Technical, HR or Mixed interview
+                            sessions according to your goals.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon purple">
+                            ⌁
+                        </div>
+
+                        <h3>
+                            Progress Tracking
+                        </h3>
+
+                        <p>
+                            Track your interview history and watch
+                            your confidence grow.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             HOW IT WORKS
+        ====================================================== -->
+
+        <section
+            id="how-it-works"
+            class="how-section"
+        >
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        ✦ HOW IT WORKS
+                    </span>
+
+                    <h2>
+                        Your Interview.
+                        <span>
+                            Your Growth.
+                        </span>
+                    </h2>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Set Up Your Interview
+                        </h3>
+
+                        <p>
+                            Choose your role, experience level,
+                            interview type and preferred topics.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Take the Interview
+                        </h3>
+
+                        <p>
+                            Answer realistic AI-generated questions
+                            just like a real interview.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Get AI Feedback
+                        </h3>
+
+                        <p>
+                            Receive detailed feedback, scores and
+                            personalized improvement tips.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TESTIMONIALS
+        ====================================================== -->
+
+        <section
+            id="testimonials"
+            class="testimonials-section"
+        >
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        ✦ TESTIMONIALS
+                    </span>
+
+                    <h2>
+                        Loved By
+                        <span>
+                            Future Professionals.
+                        </span>
+                    </h2>
+
+                </div>
+
+
+                <div class="testimonial-grid">
+
+
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "InterviewAI helped me become much more
+                            confident before my technical interviews.
+                            The instant feedback was incredibly useful."
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <div class="testimonial-avatar">
+                                A
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Alex
+                                </strong>
+
+                                <span>
+                                    Software Developer
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "The AI questions feel realistic and the
+                            analytics clearly show where I need to
+                            improve."
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <div class="testimonial-avatar">
+                                R
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Rohan
+                                </strong>
+
+                                <span>
+                                    Backend Developer
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "It feels like having an interview coach
+                            available whenever I want to practice."
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <div class="testimonial-avatar">
+                                S
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Sarah
+                                </strong>
+
+                                <span>
+                                    Product Engineer
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PRICING
+        ====================================================== -->
+
+        <section
+            id="pricing"
+            class="pricing-section"
+        >
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        ✦ PRICING
+                    </span>
+
+                    <h2>
+                        Start Preparing
+                        <span>
+                            Today.
+                        </span>
+                    </h2>
+
+                    <p>
+                        Build confidence before your next interview.
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-card">
+
+                    <div>
+
+                        <span class="pricing-label">
+                            FREE TO START
+                        </span>
+
+                        <h3>
+                            Practice Smarter
+                        </h3>
+
+                        <p>
+                            Start your interview journey with
+                            InterviewAI.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="{{ url_for('register') }}"
+                        class="hero-primary-button"
+                    >
+
+                        Get Started
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="main-footer">
+
+        <div class="footer-inner">
+
+            <a
+                href="{{ url_for('home') }}"
+                class="brand-logo"
+            >
+
+                <span class="brand-symbol">
+                    ✦
+                </span>
+
+                <span>
+                    InterviewAI
+                </span>
+
+            </a>
+
+
+            <p>
+                © 2026 InterviewAI. Practice smarter. Perform better.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Main JS -->
+    <script
+        src="{{ url_for('static', filename='js/main.js') }}"
+    ></script>
+
+</body>
+</html>
